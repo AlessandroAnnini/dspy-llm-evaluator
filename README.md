@@ -111,6 +111,26 @@ The output CSV includes the original data plus:
 - Traffic light status for each metric (green, yellow, red)
 - Overall status based on all metrics
 
+#### Example output
+
+```bash
+python main.py --data example/sample_data.csv --output sample_result.csv
+Evaluating responses: 100%|███████████████████████████████████████████████| 11/11 [00:00<00:00, 89.32it/s]
+Evaluation complete. Results saved to sample_result.csv
+
+Evaluation Summary:
+--------------------------------------------------
+🎯 Relevancy: 0.55
+✅ Correctness: 0.53
+📝 Rouge: 0.41
+🛡 Toxicity: 0.91
+
+Overall Status Distribution:
+🟢 green: 2 (18.2%)
+🟡 yellow: 2 (18.2%)
+🔴 red: 7 (63.6%)
+```
+
 ## Integration with CI/CD
 
 This evaluator can be integrated into a CI/CD pipeline to ensure consistent performance of LLM-powered assistants. See the [GitLab Integration Guide](docs/gitlab_integration.md) for details.
