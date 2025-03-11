@@ -1,5 +1,9 @@
 # LLM Evaluator with DSPy
 
+<div align="center">
+  <img src="https://cdn-icons-png.flaticon.com/512/12657/12657344.png" alt="LLM Evaluator Metrics" width="150" height="150"/>
+</div>
+
 An evaluation framework for Large Language Model (LLM) responses using DSPy, based on the principles described in the ["LLM Evaluator: what AI Scientist must know"](https://medium.com/@mattiadeleo33/llm-evaluator-what-ai-scientist-must-know-ca774d381ffe) article.
 
 ## Overview
