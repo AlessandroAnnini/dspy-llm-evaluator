@@ -131,9 +131,44 @@ Overall Status Distribution:
 🔴 red: 7 (63.6%)
 ```
 
+## Utility Script
+
+The project includes a comprehensive utility script (`scripts/llm_eval_utils.py`) for post-processing evaluation results:
+
+```bash
+python scripts/llm_eval_utils.py <command> [arguments]
+```
+
+Available commands:
+
+- `check-quality`: Validates if evaluation results meet quality thresholds
+- `generate-trends`: Creates trend reports from historical evaluation data
+- `compare-models`: Compares results from two different models or runs
+- `generate-report`: Generates HTML reports from evaluation results
+- `check-deployment`: Checks if results meet deployment criteria
+
+Example usage:
+
+```bash
+# Check quality against a threshold
+python scripts/llm_eval_utils.py check-quality --results evaluation_results.csv --min-green 70
+
+# Generate HTML report
+python scripts/llm_eval_utils.py generate-report --results evaluation_results.csv --output report.html
+
+# Compare two models
+python scripts/llm_eval_utils.py compare-models --results1 model1_results.csv --results2 model2_results.csv --output comparison.html
+```
+
 ## Integration with CI/CD
 
-This evaluator can be integrated into a CI/CD pipeline to ensure consistent performance of LLM-powered assistants. See the [GitLab Integration Guide](docs/gitlab_integration.md) for details.
+This evaluator can be integrated into a CI/CD pipeline to ensure consistent performance of LLM-powered assistants. See the [GitLab Integration Guide](docs/gitlab_integration.md) for details on:
+
+- Setting up GitLab CI/CD pipelines for automated evaluations
+- Configuring quality thresholds for pipeline success/failure
+- Tracking evaluation metrics over time
+- Comparing different model versions
+- Generating reports and visualizations
 
 ## Architecture
 
