@@ -1,5 +1,8 @@
-dspy>=2.6.10
+dspy==2.6.11
 pandas>=2.2.3
 tqdm>=4.67.1
 python-dotenv==1.0.1
 rouge>=1.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+pydantic>=2.10.6
