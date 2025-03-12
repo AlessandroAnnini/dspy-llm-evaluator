@@ -47,7 +47,7 @@ def setup_dspy(api_key=None):
     model_name = os.environ.get("MODEL_NAME", "gpt-4")
 
     # Configure DSPy with the appropriate LLM provider and model name
-    lm = dspy.LM(f"{llm_provider}/{model_name}", api_key=api_key)
+    lm = dspy.LM(f"{llm_provider}/{model_name}", api_key=api_key, cache=False)
     dspy.configure(lm=lm)
 
 
