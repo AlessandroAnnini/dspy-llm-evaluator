@@ -1,0 +1,94 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Model Comparison: evaluation_results_1.csv vs evaluation_results_2.csv</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 40px; }
+            .comparison-table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+            .comparison-table th, .comparison-table td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            .comparison-table th { background-color: #f2f2f2; }
+            .comparison-table tr:nth-child(even) { background-color: #f9f9f9; }
+            .better { color: green; font-weight: bold; }
+            h1, h2 { color: #333; }
+            .container { margin-top: 30px; }
+            img { max-width: 100%; height: auto; }
+        </style>
+    </head>
+    <body>
+        <h1>Model Comparison: evaluation_results_1.csv vs evaluation_results_2.csv</h1>
+
+        <div class="container">
+            <h2>Overall Performance</h2>
+            <table class="comparison-table">
+                <tr>
+                    <th>Metric</th>
+                    <th>evaluation_results_1.csv</th>
+                    <th>evaluation_results_2.csv</th>
+                    <th>Difference</th>
+                </tr>
+                <tr>
+                    <td>Total Evaluations</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Green Percentage</td>
+                    <td>36.36%</td>
+                    <td>40.91%</td>
+                    <td class="better">
+                        4.55%
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container">
+            <h2>Metric Scores</h2>
+            <table class="comparison-table">
+                <tr>
+                    <th>Metric</th>
+                    <th>evaluation_results_1.csv</th>
+                    <th>evaluation_results_2.csv</th>
+                    <th>Difference</th>
+                </tr>
+    
+                <tr>
+                    <td>correctness</td>
+                    <td>0.6455</td>
+                    <td>0.4864</td>
+                    <td class="">-0.1591</td>
+                </tr>
+        
+                <tr>
+                    <td>relevancy</td>
+                    <td>0.7000</td>
+                    <td>0.5591</td>
+                    <td class="">-0.1409</td>
+                </tr>
+        
+                <tr>
+                    <td>rouge</td>
+                    <td>0.5314</td>
+                    <td>0.5468</td>
+                    <td class="better">0.0154</td>
+                </tr>
+        
+                <tr>
+                    <td>toxicity</td>
+                    <td>0.9545</td>
+                    <td>0.8182</td>
+                    <td class="">-0.1364</td>
+                </tr>
+        
+            </table>
+        </div>
+
+        <div class="container">
+            <h2>Visualizations</h2>
+            <img src="comparison.png" alt="Comparison Charts">
+        </div>
+    </body>
+    </html>
+    
