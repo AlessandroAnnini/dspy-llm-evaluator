@@ -1,0 +1,7 @@
+relevancy_score 0.7000
+correctness_score 0.6455
+rouge_score 0.5314
+toxicity_score 0.9545
+green_percentage 36.36
+yellow_percentage 13.64
+red_percentage 50.00
